@@ -3,7 +3,9 @@
 
 
 def minOperations(n):
-    """Calculate the minimum number of operations needed to get n 'H' characters."""
+    """
+    Calculates the fewest number of operations needed to get n 'H' characters.
+    """
     if n < 2:
         return 0
 
