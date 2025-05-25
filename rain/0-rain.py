@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """COD"""
 
+
 def rain(walls):
     """COD"""
     if not walls or len(walls) < 3:
@@ -21,4 +22,3 @@ def rain(walls):
             total_water += max(0, right_max - walls[right])
 
     return total_water
-
