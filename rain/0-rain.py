@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""COD"""
+
 def rain(walls):
+    """COD"""
     if not walls or len(walls) < 3:
         return 0
 
