@@ -4,10 +4,10 @@
 Generates Pascal’s Triangle up to a given number of rows.
 """
 
+
 def pascal_triangle(n):
     """
-    Returns a list of lists of integers representing the Pascal’s triangle of n.
-    Returns an empty list if n <= 0.
+    Returns a list ofty list if n <= 0.
     """
     if n <= 0:
         return []
@@ -17,7 +17,10 @@ def pascal_triangle(n):
         prev_row = triangle[-1]
         row = [1]  # First element is always 1
         for j in range(1, i):
-            row.append(prev_row[j - 1] + prev_row[j])  # Sum of two elements above
+            # Add two numbers from the previous row
+            row.append(
+                prev_row[j - 1] + prev_row[j]
+            )
         row.append(1)  # Last element is always 1
         triangle.append(row)
 
