@@ -1,11 +1,16 @@
 #!/usr/bin/python3
 """
-0_main
+0-main
 """
-rain = __import__('0-rain').rain
+pascal_triangle = __import__('0-pascal_triangle').pascal_triangle
+
+def print_triangle(triangle):
+    """
+    Print the triangle
+    """
+    for row in triangle:
+        print("[{}]".format(",".join([str(x) for x in row])))
+
 
 if __name__ == "__main__":
-    walls = [0, 1, 0, 2, 0, 3, 0, 4]
-    print(rain(walls))  # Expected: 6
-    walls = [2, 0, 0, 4, 0, 0, 1, 0]
-    print(rain(walls))  # Expected: 6
+    print_triangle(pascal_triangle(5))
